@@ -1,4 +1,4 @@
-package com.xu.compare_sort.mergesort;
+package com.xu.sort.compare_sort.mergesort;
 
 import com.xu.util.SortUtil;
 import org.junit.Test;

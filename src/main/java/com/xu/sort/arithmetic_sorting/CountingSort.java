@@ -1,6 +1,5 @@
-package com.xu.arithmetic_sorting;
+package com.xu.sort.arithmetic_sorting;
 
-import com.xu.util.O;
 import com.xu.util.S;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
-package com.xu.compare_sort.selectsort;
+package com.xu.sort.compare_sort.selectsort;
 
-import com.xu.compare_sort.Sort;
+import com.xu.sort.compare_sort.Sort;
 import com.xu.util.Arr;
 import com.xu.util.O;
 import com.xu.util.SortUtil;

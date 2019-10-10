@@ -1,7 +1,7 @@
-package com.xu.compare_sort.exchangesort;
+package com.xu.sort.compare_sort.exchangesort;
 
 
-import com.xu.compare_sort.Sort;
+import com.xu.sort.compare_sort.Sort;
 import com.xu.util.Arr;
 import com.xu.util.SortUtil;
 import org.junit.Test;

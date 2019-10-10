@@ -1,4 +1,4 @@
-package com.xu.arithmetic_sorting;
+package com.xu.sort.arithmetic_sorting;
 
 import org.junit.Test;
 

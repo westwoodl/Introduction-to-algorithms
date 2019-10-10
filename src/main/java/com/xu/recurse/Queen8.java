@@ -1,4 +1,4 @@
-package com.xu.data_structures.recurse;
+package com.xu.recurse;
 
 import org.junit.Test;
 

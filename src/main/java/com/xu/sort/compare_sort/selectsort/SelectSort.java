@@ -1,10 +1,9 @@
-package com.xu.compare_sort.selectsort;
+package com.xu.sort.compare_sort.selectsort;
 
-import com.xu.compare_sort.Sort;
+import com.xu.sort.compare_sort.Sort;
 import com.xu.util.Arr;
 import org.junit.Test;
 
-import java.util.Arrays;
 import java.util.Date;
 
 /**

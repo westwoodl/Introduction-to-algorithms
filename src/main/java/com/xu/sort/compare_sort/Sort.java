@@ -1,4 +1,4 @@
-package com.xu.compare_sort;
+package com.xu.sort.compare_sort;
 
 import com.xu.util.Arr;
 

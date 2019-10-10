@@ -1,7 +1,7 @@
-package com.xu.compare_sort.insertionsort;
+package com.xu.sort.compare_sort.insertionsort;
 
 
-import com.xu.compare_sort.Sort;
+import com.xu.sort.compare_sort.Sort;
 import org.junit.Test;
 
 /**

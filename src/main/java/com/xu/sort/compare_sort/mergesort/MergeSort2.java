@@ -1,28 +1,28 @@
-package com.xu.compare_sort.mergesort;
+package com.xu.sort.compare_sort.mergesort;
 
-import com.xu.compare_sort.Sort;
-import com.xu.util.Arr;
+import com.xu.sort.compare_sort.Sort;
 import org.junit.Test;
 
 public class MergeSort2 extends Sort {
 
     @Test
-    public void test(){
-        arr = new int[]{6,5,4,3,2,1};
+    public void test() {
+        arr = new int[]{6, 5, 4, 3, 2, 1};
         temp = new int[arr.length];
         mergeSort(arr, 0, arr.length - 1);
         print();
     }
 
-    public void mergeSort(int[] a, int start, int end){
-        if(start>=end) return;
-        int mid = (start + end)/2;
+    public void mergeSort(int[] a, int start, int end) {
+        if (start >= end) return;
+        int mid = (start + end) / 2;
         mergeSort(a, start, mid);
         mergeSort(a, mid + 1, end);
         merge(a, start, mid, end);
 
     }
-    int[] temp ;
+
+    int[] temp;
 
     /**
      * 合并两个有序数组
@@ -32,21 +32,24 @@ public class MergeSort2 extends Sort {
      * @param q
      * @param r
      */
-    public void merge(int[] a, int p, int q, int r){
+    public void merge(int[] a, int p, int q, int r) {
         System.out.println("---");
 //        int[] temp = new int[r - p + 1];
-        int i = p,j = q + 1,k=0;
-        while (i<=q&&j<=r) {
-            if(a[i] > a[j])
+        int i = p, j = q + 1, k = 0;
+        while (i <= q && j <= r) {
+            if (a[i] > a[j])
                 temp[k++] = a[j++];
             else
                 temp[k++] = a[i++];
         }
-        while (i<=q)
+        /**
+         * 最后一个元素
+         */
+        while (i <= q)
             temp[k++] = a[i++];
-        while (j<=r)
+        while (j <= r)
             temp[k++] = a[j++];
-        for(k=0;k<r - p + 1;k++){
+        for (k = 0; k < r - p + 1; k++) {
             a[k + p] = temp[k];
         }
     }

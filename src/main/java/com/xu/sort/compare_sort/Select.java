@@ -1,6 +1,6 @@
-package com.xu.compare_sort;
+package com.xu.sort.compare_sort;
 
-import com.xu.compare_sort.exchangesort.QuickSort;
+import com.xu.sort.compare_sort.exchangesort.QuickSort;
 import com.xu.util.O;
 import org.junit.Test;
 

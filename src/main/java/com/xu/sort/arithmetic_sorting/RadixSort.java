@@ -1,6 +1,5 @@
-package com.xu.arithmetic_sorting;
-import com.xu.compare_sort.Sort;
-import com.xu.util.O;
+package com.xu.sort.arithmetic_sorting;
+import com.xu.sort.compare_sort.Sort;
 import com.xu.util.S;
 import org.junit.Test;
 
@@ -35,10 +34,11 @@ import org.junit.Test;
  */
 public class RadixSort extends Sort {
 
-    public int[] radixSort2(int[] A, int d){//d表示最大的数有多少位
 
-        return null;
-    }
+
+
+
+
 
     @Test public void exe(){
         S.s(radixSort(new int[]{112,324,213,789,876,567,435,907,987,150}, 3));
@@ -105,6 +105,23 @@ public class RadixSort extends Sort {
     }
 
     int num(int num, int d) {
-        return num % (10*d);
+        if(d<1) throw new IllegalArgumentException("d must Greater than or equal to 1");
+        int div = 1;
+        for(int i = 0; i<d ; i++) {
+            div *= 10;
+        }
+        div /= 10;
+        return (num / div) % 10;
+    }
+
+    @Test
+    public void testwe(){
+        System.out.println(num(64653154, 1));
+        System.out.println(num(64653154, 2));
+        System.out.println(num(64653154, 3));
+        System.out.println(num(64653154, 4));
     }
 }
+
+
+
