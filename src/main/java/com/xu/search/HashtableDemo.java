@@ -16,7 +16,7 @@ public class HashtableDemo {
         table.add(4, "ruy");
         System.out.println(table);
 
-        Hashtable.LinkedList linkedList = new Hashtable(16).new LinkedList();
+        Hashtable<Integer, String>.LinkedList<Integer, String> linkedList = new Hashtable(16).new LinkedList();
 
         linkedList.add(1, "2");
         linkedList.add(2, "2");
